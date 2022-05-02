@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function Object </title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		//syntax--
+	//	new Function("arg1","arg2","functiondefination");
+
+
+	var add = new Function("a","b","return a*b ");
+		document.writeln(add(3,4));
+
+	var power = new Function("a","b" ,"return Math.pow(a,b)");
+		document.writeln(power(3,4));
+
+	</script>
+</body>
+</html>

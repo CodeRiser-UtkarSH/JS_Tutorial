@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>freeze()</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	//freeze()
+
+	const obj1 = {
+
+		salary : 12000
+	}
+	const obj2 =Object.freeze(obj1);
+	obj2.salary = 23000;
+
+	console.log(obj2.salary);
+
+	// Object.frozen()
+
+	console.log(Object.isFrozen(obj1));
+
+</script>
+</body>
+</html>

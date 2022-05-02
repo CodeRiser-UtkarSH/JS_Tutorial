@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Methods in Js</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	// methods in js.
+
+	function empl(id, name , salary)
+		{
+			this.id=id;
+			this.name=name;
+			this.salary= salary;
+
+			this.updatesalary = updatesalary;
+			function updatesalary(upsalary)
+			{
+				this.salary = upsalary;
+			}
+		}
+
+		var e = new empl(2,"Rakesh",20000);
+		for(value in e )
+		{		
+			e.updatesalary(30000);
+			document.writeln(e[value]);
+
+
+		}
+
+						//document.writeln(e.salary);
+</script>
+</body>
+</html>

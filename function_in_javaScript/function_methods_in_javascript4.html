@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bind().</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	//syntax--
+	//function.bind(thisArg,[arg1,arg2..argn]);
+
+	//example
+	var A1={
+		name : "A",
+		getName: function () {
+			return this.name;
+		}
+
+	}
+
+	var B1={
+		name: "B",
+		// getName: function () {
+		// 	return this.name;
+		// }
+
+	}
+
+	var a = A1.getName;
+	var b = a.bind(B1);
+
+	document.writeln(b());
+	//document.write(A1.getName());//A
+</script>
+</body>
+</html>

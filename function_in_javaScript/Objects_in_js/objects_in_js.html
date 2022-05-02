@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ways to write objects in js</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	/* By Object literal */
+
+	var person ={	f_name : "Rakesh",
+					l_name : "saha",
+					age    : 21,
+					eye_color	: "blue",
+
+
+	}
+	document.writeln(person.f_name + " age is " + person.age + " & his eye color is " + person.eye_color  );
+
+	/* By creating instance of Object */
+	document.writeln("<br>");
+
+	var emp = new Object();
+
+	emp.id =1;
+	emp.name = " Rakesh saha";
+	emp.salary = 20000;
+
+	for (value in emp)
+	{
+		document.writeln(emp[value]);
+	}
+
+	/* By creating object Constructor */
+	document.writeln("<br>");
+
+
+		function empl(id, name , salary)
+		{
+			this.id=id;
+			this.name=name;
+			this.salary= salary;
+		}
+
+		var e = new empl(2,"Rakesh",20000);
+		for(value in e )
+		{
+			document.writeln(e[value]);
+		}
+
+
+	 	</script>
+	
+</body>
+</html>

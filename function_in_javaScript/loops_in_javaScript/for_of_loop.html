@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For of loop.</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	document.write("<h3> this is for...of loop in string  </h3>");
+
+	//string
+	var s = "Hello World";
+
+	for(value of s)
+	{
+		document.write(value + "<br>");
+	}
+					document.write("<h3> this is for...of loop in array.  </h3>");
+
+	var numbers = [1,2,3,4,5,6,7,8,9,10];
+
+	for(value of numbers)		// for of loop
+	{
+		document.writeln(value);
+	}
+
+
+	for(let i=0 ; i<numbers.length-1;i++)	//for loop
+	{
+		document.writeln(numbers[i]);
+	}
+</script>
+</body>
+</html>

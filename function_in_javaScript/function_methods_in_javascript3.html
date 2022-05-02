@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>apply()--2</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		//syntax--
+		//function.apply(thisArg,[array]);
+
+
+		var array =[1,2,3,4];
+
+		for (value of array)
+		{
+			document.writeln(value);
+		}
+		document.write("<br>");
+
+		var max = Math.max.apply(this,array);//4
+		document.write("Max value of array: "+max);
+
+		document.write("<br>");
+
+		var min = Math.min.apply(this,array);//4
+		document.write("Min value of array: "+min);
+	</script>
+</body>
+</html>

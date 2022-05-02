@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>create()</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	//create()
+
+	function colors() {
+		this.fist ="Pink";
+	}
+
+	function fun()
+	{
+		colors.call(this);
+	}
+
+	fun.prototype = Object.create(colors.prototype);
+	const app = new fun();
+	console.log(app);
+	
+</script>
+</body>
+</html>

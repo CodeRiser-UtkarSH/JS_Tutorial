@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Call().</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	//call()
+
+	//syntax--
+	// function.call(this Arg,arg1,arg2,...argn);
+
+	//exmple--
+
+	function emp(id,name)
+	{
+		this.id=id;
+		this.name=name;
+
+	}
+	function peremp(id,name)
+	{
+		emp.call(this,id,name);
+	}
+	function tempemp(id,name)
+	{
+		emp.call(this,id,name);
+	}
+	var p_emp=new peremp(1,"utkarsh sahu");
+	var t_emp=new tempemp(2,"animesh sahu");
+
+	document.writeln(p_emp.id + " " +p_emp.name);
+	document.writeln(t_emp.id + " " +t_emp.name);
+
+	//document.writeln(new peremp (1,"utkarsh sahu").id);
+	//	document.writeln(new peremp (1,"utkarsh sahu").name);
+
+
+
+</script>
+</body>
+</html>

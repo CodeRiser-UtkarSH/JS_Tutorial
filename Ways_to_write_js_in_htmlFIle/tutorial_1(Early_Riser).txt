@@ -1,0 +1,51 @@
+JavaScript--
+
+		JavaScript is an object-based scripting language.
+
+* The JavaScript Translator is responsible for translating the JavaScript code for the web browser.
+
+* It was introduced in the year 1995 in the Netscape Navigator.
+
+* Every browser supports js.
+
+* Js is different from java language.
+
+* Light weight
+
+* It is a case-sensitive language.
+
+* It is weekly type language.
+
+
+Application of Javascript--
+
+	* Client-side validation,
+
+	* Dynamic drop-down menus,
+
+	* Displaying date and time,
+
+	* Displaying pop-up windows and dialog boxes (like an alert dialog box,
+	  confirm dialog box and prompt dialog box),
+
+	* Displaying clocks etc.
+
+Ways to Add javaScript in html--
+
+	* between body tag
+
+	* between header tag
+
+	* between header tag using src.
+
+	Comments--
+
+	* comments are meaningful way to deliver messages.
+
+	* Used to add information about the code, warning , suggestions.
+
+	* ingnored by the browser.
+
+		single line comments => //....
+		multi  line comments => /* .... */
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>apply().</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		//syntax--
+		//function.apply(thisArg,[array]);
+
+		var array1 = [2,3,4,5];
+		var array2 = [6,7,8,9];
+
+		for(value of array1)
+		{
+			document.writeln(value);
+		}
+		document.writeln("<br>");
+		for(value of array2)
+		{
+			document.writeln(value);
+		}
+
+		array2.push.apply(array2,array1);
+
+		document.writeln("<br>");
+		//document.writeln(array1);
+		for(value of array2)
+		{
+			document.writeln(value);
+		}
+
+	</script>
+</body>
+</html>

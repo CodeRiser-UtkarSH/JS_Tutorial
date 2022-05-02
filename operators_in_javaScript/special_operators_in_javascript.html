@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Special Operator in JavaScript</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	var a =true;
+	var b = false;
+	//?: 
+
+	var c = a ? 3 : 4;
+	document.write(c);
+
+	document.writeln("<br>");
+
+	// , operator
+
+	let X = (1,2,3);
+	let Y = (4,3,2);
+	document.writeln(Y);
+
+	// delete operator 
+
+	person ={
+		f_name : 'firstname',
+		l_name : 'lastname',
+		age    : 'Age',
+	};
+
+		delete person.l_name;
+			document.writeln("<br>");
+
+		document.writeln(person.l_name);
+
+			document.writeln("<br>");
+
+	// In operator
+	
+	var d = "age" in person ? true : false;
+	document.writeln("value of d " + d);
+
+	
+</script>
+</body>
+</html>

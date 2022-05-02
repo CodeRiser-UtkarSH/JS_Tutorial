@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>seal(), sealed()</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	const obj1= {
+		name :"xyz",
+	}
+	const obj2 = Object.seal(obj1);
+	obj2.name= "YXZ";
+
+	console.log(obj2.name);//YXZ
+
+
+	delete obj2.name;// not comming 
+	console.log(obj2.name);// YXZ
+
+	console.log (Object.isSealed(obj2));
+	console.log (Object.isSealed(obj1));
+
+</script>
+</body>
+</html>
