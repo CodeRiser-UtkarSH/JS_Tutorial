@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays In JavaScript</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	// Arrays in javaScript
+	//Array Methods ==>
+
+	//1) concat 2) copywithin 3) entries 4) every 5) flat 6) flatMap
+
+	//1) concat
+
+	var arr1 = ["python" , "C++", "Java"];
+	var arr2 = ["html", "css"];
+
+	var arr3 = arr1.concat(arr2);
+
+	document.writeln(arr3);
+	document.writeln("<br>");
+
+	//2) copyWithin
+
+	var arr4 = arr3.copyWithin(2, 3, 4);
+
+	document.writeln(arr4);
+		document.writeln("<br>");
+
+	//3) entries
+
+	var arr5 = arr2.entries();
+	for(value of arr5)
+	{
+		document.writeln(value);
+	}
+		document.writeln("<br>");
+	//4) every
+
+	var arr6 = [2,3,4,5];
+	function check() {
+		return value>1;
+	}
+	document.writeln(arr6.every(check));
+		document.writeln("<br>");
+
+	//5)flat
+
+	var arr7 = [2,3,4,[5,6]];
+	var arr8 = arr7.flat();//[2,3,4,5,6]
+	document.writeln(arr8);
+		document.writeln('<br>');
+
+	//6) flatMap
+	arr9 = arr7.flatMap(x=>[x/2]);
+		document.writeln(arr9);
+</script>
+</body>
+</html>

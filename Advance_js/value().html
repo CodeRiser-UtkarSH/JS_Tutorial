@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set In JavaScript.</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	//syntex==>
+
+	//new set([iterable]);
+
+	// Set Method in JavaScript.
+	//add(), clear(), delete(), Entries(), forEach(), has(), values()
+
+	//5) has() =>
+
+
+
+	var s = new Set();
+	s.add("H");
+	s.add("T");
+	s.add("M");
+	s.add("L");
+
+	for(value of s )
+	{
+		document.writeln(value + "<br>");
+	}
+	document.writeln("<br>");
+
+	// s.has("T");
+	// document.writeln("Check 'T' present or not <br>" + s.has("T"));
+	// 	document.writeln("Check 'K' present or not <br>" + s.has("K"));
+
+		// 6) values() =>
+
+		var iterator = s.values();
+
+		for(let i = 0 ; i<s.size; i++)
+		{
+			document.writeln("values in iterator " + iterator.next().value +"<br>");
+		}
+		// document.writeln("values in iterator " + iterator.next().value);
+		// 	document.writeln("values in iterator " + iterator.next().value);
+		// 	document.writeln("values in iterator " + iterator.next().value);
+		// 	document.writeln("values in iterator " + iterator.next().value);
+		// 	document.writeln("values in iterator " + iterator.next().value);
+</script>
+</body>
+</html>

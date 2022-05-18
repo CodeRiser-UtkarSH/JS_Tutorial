@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays In JavaScript</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	// Arrays in javaScript
+	// Ways 
+
+	//1) by arrays literal
+	//2) by new keywords
+	//3) by using constructor
+
+	//	by arrays literal==>
+
+	var fruits = ["Orange", "Mango", "Grapes"];
+	for(value of fruits)
+	{
+		document.writeln(value);
+	}
+		document.writeln("<br>");
+
+	//2) by new keywords==>
+
+	var fruits = new Array();
+	fruits[0] = "Orange";
+	fruits[1] = "Mango";
+	fruits[2]= "Grapes";
+
+		for(value of fruits)
+		{
+			document.writeln(value);
+		}
+			document.writeln("<br>");
+
+	// 3) by using constructor
+
+	var fruits = new Array("Orange", "Mango", "Grapes");
+		for(value of fruits)
+		{
+			document.writeln(value);
+		}
+
+</script>
+</body>
+</html>
